@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UX Labb1</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="mds.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="mds.js"></script>
+</head>
+
+<body>
+    <!-- Body and Header -->
+    <div class="mds-container">
+        <div class="mds-container-header">
+            <h1 class="mds-container__headline">
+                UX-Design Labb 1
+            </h1>
+        </div>
+        <!-- Input ftext field -->
+        <div class="mds-text-field">
+            <input class="mds-text-field__input" type="text" placeholder=" " maxlength="20">
+            <span class="mds-text-field-borderline"></span>
+            <label class="mds-text-field__label">Name</label>
+        </div>
+        <div class="mds-text-field">
+            <input class="mds-text-field__input mds-text-field__input--disabled " type="text" placeholder=" " maxlength="20" disabled>
+            <span class="mds-text-field-borderline"></span>
+            <label class="mds-text-field__label mds-text-field__label--disabled  ">Disabled</label>
+        </div>
+        <!-- Switch  -->
+        <div class="mds-switch">
+            <label class="mds-switch-field">
+                <input type="checkbox" class="mds-switch-field__checkbox">
+                <span class="mds-switch-field__circle"></span>
+            </label>
+            <label class="mds-switch-field">
+                <input type="checkbox" class="mds-switch-field__checkbox" disabled checked>
+                <span class="mds-switch-field__circle mds-switch-field__circle--disabled "></span>
+            </label>
+        </div>
+        <!-- Checkbox -->
+        <div class="mds-checkbox">
+            <label class="mds-checbox-field">
+                <input type="checkbox" class="mds-checkbox-field__checkbox">
+                <span class="mds-switch-field__Square"></span>
+            </label>
+            <label class="mds-checbox-field">
+                <input type="checkbox" class="mds-checkbox-field__checkbox"disabled>
+                <span class="mds-switch-field__Square mds-switch-field__Square--disabled "></span>
+            </label>
+        </div>
+        <!-- Radio Button -->
+        <div class="mds-radio">
+            <div class="mds-radio-box">
+                <input type="radio" class ="mds-radio-box__button" name="radio" value="">
+                <span class="mds-radio-box__border"></span>
+                <span class="mds-radio-box__toggle"></span>
+            </div>
+            <div class="mds-radio-box">
+                <input type="radio" class ="mds-radio-box__button" name="radio" value="">
+                <span class="mds-radio-box__border"></span>
+                <span class="mds-radio-box__toggle"></span>
+            </div>
+        
+        </div>
+        <!-- Disabled -->
+        <div class="mds-radio position">
+            <div class="mds-radio-box">
+                <input type="radio" class ="mds-radio-box__button" name="radio" value="" disabled>
+                <span class="mds-radio-box__border"></span>
+                <span class="mds-radio-box__toggle mds-radio-box__toggle--disabled"></span>
+            </div>
+            <div class="mds-radio-box">
+                <input type="radio" class ="mds-radio-box__button" name="radio" value="" disabled>
+                <span class="mds-radio-box__border"></span>
+                <span class="mds-radio-box__toggle mds-radio-box__toggle--disabled"></span>
+            </div>
+        
+        </div>
+        <footer class="mds-footer">
+            <p class="mds-footer-text">
+                Jonas Öberg
+            </p>
+        </footer>
+    </div>
+    <script>
+        mds.textInputField(document.querySelector(".mds-text-field__input"));
+        mds.switchfiled(document.querySelector(".mds-switch-field"));
+        mds.checkboxField(document.querySelector(".mds-checkbox"));
+        mds.radioField(document.querySelector(".mds-radio"));
+    </script>
+</body>
+
+</html>
